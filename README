@@ -1,0 +1,5 @@
+Adds an 'animating' event to jQuery that is triggered during the element's animation.
+Be warned that this plugin overides jQuery's fx.step._default method so we can fire
+the event for every animation step. It calls the original jQuery method but there could
+be issues if the method is every changed in future jQuery releases. Only tested with 
+jQuery 1.4.3.
